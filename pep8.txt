@@ -1,0 +1,10 @@
+editor/admin.py:13:80: E501 line too long (92 > 79 characters)
+editor/admin.py:68:9: W292 no newline at end of file
+editor/tests.py:18:80: E501 line too long (90 > 79 characters)
+editor/tests.py:35:80: E501 line too long (80 > 79 characters)
+editor/tests.py:46:80: E501 line too long (82 > 79 characters)
+editor/tests.py:50:80: E501 line too long (92 > 79 characters)
+editor/tests.py:51:80: E501 line too long (82 > 79 characters)
+editor/tests.py:52:80: E501 line too long (81 > 79 characters)
+editor/tests.py:53:80: E501 line too long (95 > 79 characters)
+editor/tests.py:53:96: W292 no newline at end of file
