@@ -5,8 +5,6 @@ from django.conf import settings
 
 rich_text_module = None
 
-print settings.INSTALLED_APPS
-
 if 'imperavi' in settings.INSTALLED_APPS:
     try:
         # use django-imperavi if installed
