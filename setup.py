@@ -8,10 +8,12 @@ NEWS = open(os.path.join(here, 'NEWS.txt')).read()
 
 version = '0.1'
 
-install_requires = [
-    'django',
-]
-
+try:
+    REQUIREMENTS = open('requirements.txt').read()
+except:
+    REQUIREMENTS = [
+        'django',
+    ]
 
 setup(name='django-editor',
     version=version,
@@ -34,5 +36,5 @@ setup(name='django-editor',
         'django-tinymce',
     ),
     zip_safe=False,
-    install_requires=install_requires,
+    install_requires=REQUIREMENTS,
 )
