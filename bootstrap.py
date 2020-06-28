@@ -80,11 +80,7 @@ else:
 cmd = 'from setuptools.command.easy_install import main; main()'
 ws  = pkg_resources.working_set
 
-if USE_DISTRIBUTE:
-    requirement = 'distribute'
-else:
-    requirement = 'setuptools'
-
+requirement = 'distribute' if USE_DISTRIBUTE else 'setuptools'
 if is_jython:
     import subprocess
 
