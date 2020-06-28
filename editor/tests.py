@@ -22,7 +22,7 @@ class EditorTestBase(unittest.TestCase):
         if not expected_widget:
             from django.forms.widgets import Textarea
             expected_widget = Textarea
-        if not expected_admin or not expected_inline:
+        if not (expected_admin and expected_inline):
             from django.contrib.admin import ModelAdmin, StackedInline
             expected_admin = ModelAdmin
             expected_inline = StackedInline
